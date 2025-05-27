@@ -1,0 +1,18 @@
+Finding,Value
+#Communities,122055
+Largest Community Size,65
+Smallest Community Size,5
+Median Community Size,6
+#Singleton Communities,0
+Largest Community ID,abc5dd0b-12c4-4386-8828-7b003bc4b059
+Smallest Community ID,db0344ae-bbb1-4c6b-b944-9fd12391e4c1
+Top_1_Community_ID,abc5dd0b-12c4-4386-8828-7b003bc4b059
+Top_1_Community_Size,65
+Top_2_Community_ID,bdbd621f-97b8-44bd-b861-c05c67db14d3
+Top_2_Community_Size,53
+Top_3_Community_ID,bd2f0b65-3b58-4d76-9bfd-1f6b4c726c1c
+Top_3_Community_Size,50
+Top_4_Community_ID,86dbf989-e8b3-4218-886c-3e38d7bf55e3
+Top_4_Community_Size,37
+Top_5_Community_ID,4f8eb18c-72b0-44ef-a795-4b4b5e9273a6
+Top_5_Community_Size,30

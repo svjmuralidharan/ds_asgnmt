@@ -6,7 +6,7 @@ This project performs detailed analysis and comparison of network communities de
 
 ## 📂 Project Structure
 
-
+```bash
 ds_asgnmt/
 ├── src/           # Main Python scripts (e.g., community_analysis_class.py)
 ├── test/          # Automated tests (pytest)
@@ -17,7 +17,7 @@ ds_asgnmt/
 ├── Makefile       # Project automation (build, run, test, clean)
 ├── requirements.txt # Python dependencies
 └── README.md
-
+```
 
 
 ---
@@ -28,13 +28,14 @@ ds_asgnmt/
 
 Place your input `.parquet` files in the `data/` folder, named as:
 
+```bash
 data/
 ├── method_1.parquet
 ├── method_2.parquet
 ├── method_3.parquet
 ├── method_4.parquet
 └── method_5.parquet
-
+```
 
 
 ---
@@ -62,6 +63,8 @@ Clean all outputs and summary files:
 make clean
 ```
 
+---
+
 3. Where to Find the Outputs
 output/: CSV files, Markdown summary (output.md)
 figures/: PNG visualizations
@@ -72,6 +75,9 @@ Similarity matrix: output/nmi_similarity_matrix.csv
 Community alignment: output/aligned_communities_*.csv
 Markdown summary: output/output.md
 
+---
+
+
 4. Running Locally (without Docker)
 ```bash
 python3 -m venv venv
@@ -80,6 +86,8 @@ pip install -r requirements.txt
 python src/community_analysis.py
 PYTHONPATH=src pytest test/
 ```
+
+---
 
 📝 Notes
 Adjust the number of input files as needed. The script auto-detects method_*.parquet files in data/.

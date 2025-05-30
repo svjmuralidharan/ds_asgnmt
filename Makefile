@@ -36,5 +36,5 @@ test: build
 # Remove output and figure files
 .PHONY: clean
 clean:
-	rm -rf output/*.csv output/*.md figures/*.png
+	rm -rf output figures output.md 
 

@@ -65,20 +65,22 @@ make clean
 
 ---
 
-3. Where to Find the Outputs
-output/: CSV files, Markdown summary (output.md)
-figures/: PNG visualizations
+### 3. Where to Find the Outputs
 
-Key files:
-Community summaries: output/community_summary.csv
-Similarity matrix: output/nmi_similarity_matrix.csv
-Community alignment: output/aligned_communities_*.csv
-Markdown summary: output/output.md
+- **`output/`**: CSV files, Markdown summary (`output.md`)
+- **`figures/`**: PNG visualizations
+
+**Key files:**
+- Community summaries: `output/community_summary.csv`
+- Similarity matrix: `output/nmi_similarity_matrix.csv`
+- Community alignment: `output/aligned_communities_*.csv`
+- Markdown summary: `output/output.md`
+
 
 ---
 
 
-4. Running Locally (without Docker)
+### 4. Running Locally (without Docker)
 ```bash
 python3 -m venv venv
 source venv/bin/activate
@@ -89,7 +91,7 @@ PYTHONPATH=src pytest test/
 
 ---
 
-📝 Notes
+### 📝 Notes
 Adjust the number of input files as needed. The script auto-detects method_*.parquet files in data/.
 Outputs and figures are always generated fresh with each run.
 For advanced configuration, edit src/utils/constants.py.

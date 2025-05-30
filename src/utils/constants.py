@@ -1,7 +1,10 @@
 """Holds all the constants used in the project."""
 
-from pathlib import Path
-
-OUT_DIR: Path = "output"
-FIG_DIR: Path = "figures"
-DATA_DIR: Path =  "data"
+DATA_DIR = "data"
+OUT_DIR = "output"
+FIG_DIR = "figures"
+METHOD_FILE_PATTERN = "method_*.parquet"
+COMMUNITY_SUMMARY_CSV = "community_summary.csv"
+NMI_MATRIX_CSV = "nmi_similarity_matrix.csv"
+COMMUNITY_SIZE_PNG = "community_size_distributions.png"
+NMI_MATRIX_PNG = "nmi_similarity_matrix.png"

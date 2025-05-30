@@ -1,0 +1,6 @@
+Method,#Communities,Largest,Smallest,Median Size,#Singletons,Top_5_Community_Sizes
+Method_1,88038,65,5,6,0,"65, 53, 50, 37, 30"
+Method_2,122055,65,5,6,0,"65, 53, 50, 37, 30"
+Method_3,105949,43,5,7,0,"43, 43, 43, 32, 31"
+Method_4,98468,65,5,6,0,"65, 53, 50, 37, 30"
+Method_5,127812,66,5,7,0,"66, 34, 33, 33, 32"

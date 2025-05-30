@@ -44,18 +44,23 @@ data/
 **All-in-one:**
 ```bash
 make all
-
+```
 Build Docker Image:
+```bash
 make build
-
+```
 Run the Analysis:
+```bash
 make run
-
+```
 Run Tests:
+```bash
 make test
-
+```
 Clean all outputs and summary files:
+```bash
 make clean
+```
 
 3. Where to Find the Outputs
 output/: CSV files, Markdown summary (output.md)
@@ -68,11 +73,13 @@ Community alignment: output/aligned_communities_*.csv
 Markdown summary: output/output.md
 
 4. Running Locally (without Docker)
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 python src/community_analysis.py
 PYTHONPATH=src pytest test/
+```
 
 📝 Notes
 Adjust the number of input files as needed. The script auto-detects method_*.parquet files in data/.

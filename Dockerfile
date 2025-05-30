@@ -1,19 +1,16 @@
-FROM python:3.11
-
-# Install Poetry
-RUN pip install poetry
+FROM python:3.11-slim
 
 WORKDIR /app
 
-# Copy only the dependency files first (for Docker layer cache)
-COPY pyproject.toml poetry.lock* /app/
+COPY requirements.txt .
+RUN pip install --no-cache-dir -r requirements.txt
 
-# Install dependencies (no virtualenv, since Docker is already isolated)
-RUN poetry config virtualenvs.create false \
-    && poetry install --no-interaction --no-ansi
+# Copy everything in the src folder into /app/src in the container
+COPY src/ ./src/
+# copy your data directory in the container
+COPY data/ ./data/
+# copy your test directory in the container
+COPY test/ ./test/
 
-# Copy the rest of your code
-COPY . /app
-
-# Set default command
-CMD ["python", "your_script.py"]
+# Run Script
+CMD ["python", "src/community_analysis.py"]
